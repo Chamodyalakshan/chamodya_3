@@ -11,37 +11,49 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+    }
 
 
-.div1{
+    .div1 {
+        background-color:rgb(40, 40, 115);
+        text-indent: 75px;
+        color:white;
+        margin:0;
+        font-size:13px;
+        padding:1px
+    }
+    
+    .image {
+        margin:30px;
+        width:500px;
+        height:130px;
+    }
 
-	background-color:white;
-	margin:0;
-	
-}
+    .div2 {
+        background-color:rgb(40, 40, 115);
+        overflow:hidden;
+        padding:20px;
+    }
 
-header {
-    background-color:#070958;
-    color: #fff;
-}
+    .div2 a{
+        color:white;
+        text-decoration:none;
+        padding:15px 15px;
+        
+    }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-	text-align:center;
-}
+    .div2 a:hover{
+        color:black;
+        background-color:white;
+        
+    }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+
+
+
+
+
 
 section {
     padding: 20px;
@@ -68,32 +80,32 @@ footer {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div>
 		
-		<div>
-		<p style="text-indent: 150px;color:white;">Henegama Central College Official Web Site</p>
+		<div class="div1" >
+		<p>Henegama Central College Official Web Site</p>
 		
 		</div>
-		<div class="div1">
+		<div >
 		 <center>
-			<img src="henegama_cc.png" style="padding:10px;width:500px;height:13s0px;"></img>
+			<img class="image" src="henegama_cc.png"></img >
 		 </center>
 		</div>
 		
 		
-		<div>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="https://henegamacc.org/?page_id=1926">STAFF</a></li>
-                <li><a href="https://henegamacc.org/gallery/">GALLERY</a></li>
-                <li><a href="https://henegamacc.org/events/">EVENTS</a></li>
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="https://henegamacc.org/contact/">CONTACT</a></li>
-            </ul>
-        </nav>
+		<div class="div2">
+        
+           <center>
+                <a href="#">HOME</a>
+                <a href="#">STAFF</a>
+                <a href="#">GALLERY</a>
+                <a href="#">EVENTS</a>
+				<a href="#">ABOUT</a>
+				<a href="#">CONTACT</a>
+            </center>
+        
 		</div>
-    </header>
+    </div>
     
     <section>
         <h2>About Us</h2>

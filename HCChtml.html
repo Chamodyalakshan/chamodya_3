@@ -29,36 +29,53 @@
                 
             }
 
+            @keyframes underline {
+            0% { width: 0; }
+            100% { width: 100%; }
+            }
+
+            /* Style the navbar */
             .navbar {
-                background-color:rgb(26, 26, 130);
-                overflow:hidden;
-                
-
+                background-color: rgb(26, 26, 130);
+                overflow: hidden;
             }
 
+            /* Style the navbar links */
             .navbar a {
-                display:inline-block;
-                text-decoration:none;
-                color:rgb(183, 177, 177);
-                text-align:center;
-                padding:20px;
-                
-
+                display: inline-block;
+                text-decoration: none;
+                color: rgb(183, 177, 177);
+                text-align: center;
+                padding: 20px;
+                position: relative; /* Add relative positioning */
             }
 
-        
+            /* Style the pseudo-element for the underline */
+            .navbar a::after {
+                content: '';
+                position: absolute;
+                bottom: 12px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: transparent; /* Initially transparent */
+                transition: width 0.3s ease-in-out;
+            }
 
+            /* Define the animation for the pseudo-element */
+            .navbar a:hover::after {
+                width: 100%; /* Expand the width on hover */
+                background-color: rgb(184, 21, 21); /* Change color on hover */
+                animation: underline 0.3s forwards; /* Apply the animation */
+                
+            }
+                        
+                            
 
-
-            
-            .navbar a:hover {
+            .navbar a:hover{
+                background-color: rgb(255, 255, 255);
                 color:black;
-                background-color:white;
-                
-
-
-            }
-
+            }    
             .div1{
                 background-color:rgb(103, 103, 103);
                
